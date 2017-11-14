@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/activity_main"
+    tools:context="com.bawei.dianshang.MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fragmentlayout"
+      android:layout_above="@+id/mian_group"
+        ></FrameLayout>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/mian_group"
+        android:orientation="horizontal"
+        >
+        <RadioButton
+            android:id="@+id/main_rb_homepage"
+            style="@style/tab_menu_item"
+            android:drawableTop="@drawable/homepage_check"
+            android:checked="true"
+
+            />
+        <RadioButton
+            android:id="@+id/main_rb_classify"
+            style="@style/tab_menu_item"
+            android:drawableTop="@drawable/classify_check"
+            />
+        <RadioButton
+            android:id="@+id/main_rb_find"
+            style="@style/tab_menu_item"
+            android:drawableTop="@drawable/find_check"
+            />
+        <RadioButton
+            android:id="@+id/main_rb_shoppingcar"
+            style="@style/tab_menu_item"
+            android:drawableTop="@drawable/shoppingcar_check"
+            />
+        <RadioButton
+            android:id="@+id/main_rb_my"
+            style="@style/tab_menu_item"
+            android:drawableTop="@drawable/my_check"
+
+            />
+        
+        
+        
+    </RadioGroup>
+    
+    
+</RelativeLayout>
